@@ -17,6 +17,22 @@
 .bg-color{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.btn-primary{
+    background-color: rgb(255, 144, 14);
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+main{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+main > section{
+    margin-top: 130px;
+}
 /* header styles */
 
 /* navbar styles */
@@ -40,4 +56,53 @@
 .nav-itemh, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+/* Banner styles content */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+.banner-image{
+    width: 100%;
+}
+/* team display styles */
+.teams{
+    text-align: center;
+    }
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features{
+    max-width: 576px;
+    margin-left: 100px;
+}
+#p1{
+    color: #727272;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#p2{
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;    
+}
+#p3{
+    color: #FF900E;
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* Media responsive styles */
+@media screen and (max-width: 576px) {
+.nav-itemh, .nav-links{
+    flex-direction: column;
+}    
 }
